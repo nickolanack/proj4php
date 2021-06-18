@@ -96,7 +96,6 @@ class Wkt {
                 break;
             case 'PRIMEM':
                 // to radians?
-
                 $wktParams->from_greenwich = deg2rad(floatval(array_shift($wktArray)));
                 break;
             case 'UNIT':
@@ -268,7 +267,6 @@ class Wkt {
                     break;
 
                 // Here is a list of other axis that exist in wkt definitions. are they useful?
-
                 case 'geodetic latitude': //from SR-ORG:29
 
                 case 'latitude':
@@ -405,7 +403,6 @@ class Wkt {
         ) {
 
             //$wktName=="1/32meter" = 0.03125 SR-ORG:98 ? should we support this?
-
             //Example projections with non-meter units:
             // R-ORG:27 Foot_US
             // EPSG:2066 Clarke's link http://georepository.com/unit_9039/Clarke-s-link.html
